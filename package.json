@@ -1,0 +1,28 @@
+{
+  "name": "homework-9-good-readme-generator",
+  "version": "1.0.0",
+  "description": "This is the homework assignment for week 9 of the coding boot camp through UT Austin. It uses node.js to create a README generator using the inquirer package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanrotman/homework-9-good-README-generator.git"
+  },
+  "keywords": [
+    "README",
+    "generator",
+    "node",
+    "inquirer"
+  ],
+  "author": "Ryan Rotman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanrotman/homework-9-good-README-generator/issues"
+  },
+  "homepage": "https://github.com/ryanrotman/homework-9-good-README-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
