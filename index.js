@@ -63,4 +63,21 @@ function promptUser() {
             name: "email",
         }
     ]);
+};
+
+function generateREADME(answers) {
+    return ``
 }
+
+promptUser()
+    .then(function(answers) {
+        let readme = generateREADME(answers);
+
+        return writeFileAsync("README.md", readme);
+    })
+    .then(function() {
+        console.log("Successfully wrote to README.md");
+    })
+    .catch(function(err) {
+        console.log(err);
+    });
