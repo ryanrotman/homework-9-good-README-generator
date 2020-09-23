@@ -67,44 +67,43 @@ function promptUser() {
 
 function generateREADME(answers) {
     return `
-    # ${answers.title} | ![License Badge](https://img.shields.io/badge/license-${answers.license}-green)
+# ${answers.title} | ![License Badge](https://img.shields.io/badge/license-${answers.license}-green)
 
-    ## Description
-    
-    ${answers.description}
+## Description
 
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+${answers.description}
 
-    ## Installation
-    
-    ${answers.installation}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    ## Usage
+## Installation
 
-    ${answers.usage}
+${answers.installation}
 
-    ## License
+## Usage
 
-    This project is covered under the ${answers.license} license and you can find additional information about that license [here](https://opensource.org/licenses/${answers.license}).
+${answers.usage}
 
-    ## Contributing
+## License
 
-    ${answers.contributing}
+This project is covered under the ${answers.license} license and you can find additional information about that license [here](https://opensource.org/licenses/${answers.license}).
 
-    ## Tests
+## Contributing
 
-    ${answers.tests}
+${answers.contributing}
 
-    ## Questions
+## Tests
 
-    For any clarifications or additional questions regarding this project, you can view my [GitHub profile](https://github.com/${answers.github}) or contact me by email at ${answers.email}.
-    `;
+${answers.tests}
+
+## Questions
+
+For any clarifications or additional questions regarding this project, you can view my [GitHub profile](https://github.com/${answers.github}) or contact me by email at ${answers.email}.`;
 }
 
 promptUser()
