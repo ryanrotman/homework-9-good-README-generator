@@ -104,7 +104,7 @@ function generateREADME(answers) {
     ## Questions
 
     For any clarifications or additional questions regarding this project, you can view my [GitHub profile](https://github.com/${answers.github}) or contact me by email at ${answers.email}.
-    `
+    `;
 }
 
 promptUser()
