@@ -4,6 +4,8 @@ let util = require("util");
 
 let writeFileAsync = util.promisify(fs.writeFile);
 
+// FIXME: will need to import the generateMarkdown module
+
 function promptUser() {
     return inquirer.prompt([
         {
@@ -65,6 +67,8 @@ function promptUser() {
     ]);
 };
 
+// FIXME: add this section to the generateMarkdown.js file and change all sections with 'answers' to 'data'
+
 function generateREADME(answers) {
     return `
 # ${answers.title} | ![License Badge](https://img.shields.io/badge/license-${answers.license}-green)
@@ -105,6 +109,8 @@ ${answers.tests}
 
 For any clarifications or additional questions regarding this project, you can view my [GitHub profile](https://github.com/${answers.github}) or contact me by email at ${answers.email}.`;
 }
+
+// FIXME: take a look at the develop folder and this section and adjust accordingly
 
 promptUser()
     .then(function(answers) {
