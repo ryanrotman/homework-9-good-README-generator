@@ -1,8 +1,9 @@
-let inquirer = require("inquirer");
-let fs = require("fs");
-let util = require("util");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown");
 
-let writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // FIXME: will need to import the generateMarkdown module
 
@@ -66,49 +67,6 @@ function promptUser() {
         }
     ]);
 };
-
-// FIXME: add this section to the generateMarkdown.js file and change all sections with 'answers' to 'data'
-
-function generateREADME(answers) {
-    return `
-# ${answers.title} | ![License Badge](https://img.shields.io/badge/license-${answers.license}-green)
-
-## Description
-
-${answers.description}
-
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-## Installation
-
-${answers.installation}
-
-## Usage
-
-${answers.usage}
-
-## License
-
-This project is covered under the ${answers.license} license and you can find additional information about that license [here](https://opensource.org/licenses/${answers.license}).
-
-## Contributing
-
-${answers.contributing}
-
-## Tests
-
-${answers.tests}
-
-## Questions
-
-For any clarifications or additional questions regarding this project, you can view my [GitHub profile](https://github.com/${answers.github}) or contact me by email at ${answers.email}.`;
-}
 
 // FIXME: take a look at the develop folder and this section and adjust accordingly
 
