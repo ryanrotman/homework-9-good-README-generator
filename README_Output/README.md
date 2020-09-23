@@ -27,7 +27,7 @@ This project is covered under the MIT license and you can find additional inform
 
 ## Contributing
 
-Myself, Ryan Rotman, is the main contributor to this project, but should anyone notice anything that could be adjusted or made better, feel free to submit an 
+Myself, Ryan Rotman, is the main contributor to this project, but should anyone notice anything that could be adjusted or made better, feel free to submit an issue and/or pull request. Any and all collaboration is welcome.
 
 ## Tests
 
