@@ -71,7 +71,7 @@ function promptUser() {
 
 // Initialize the program
 promptUser()
-    .then(function(answers) {
+    .then(function(data) {
         let readme = generateMarkdown(data);
         // Writing the README to a new folder in the project
         return writeFileAsync("./README_Output/README.md", readme);
