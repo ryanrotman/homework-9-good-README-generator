@@ -27,16 +27,6 @@ function promptUser() {
             name: "usage",
         },
         {
-            type: "input",
-            message: "Who is contributing to this project?",
-            name: "contributing",
-        },
-        {
-            type: "input",
-            message: "How is this project tested?",
-            name: "tests",
-        },
-        {
             type: "list",
             message: "Select what license is being used?",
             name: "license",
@@ -54,19 +44,67 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "What is your GitHub username?",
+            message: "Who is contributing to this project?",
+            name: "contributing",
+        },
+        {
+            type: "input",
+            message: "How is this project tested?",
+            name: "tests",
+        },
+        {
+            type: "input",
+            message: "Enter your GitHub username?",
             name: "github",
         },
         {
             type: "input",
-            message: "What is your email address?",
+            message: "Enter your email address?",
             name: "email",
         }
     ]);
 };
 
 function generateREADME(answers) {
-    return ``
+    return `
+    # ${answers.title} | ![License Badge](https://img.shields.io/badge/license-${answers.license}-green)
+
+    ## Description
+    
+    ${answers.description}
+
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
+
+    ## Installation
+    
+    ${answers.installation}
+
+    ## Usage
+
+    ${answers.usage}
+
+    ## License
+
+    This project is covered under the ${answers.license} license and you can find additional information about that license [here](https://opensource.org/licenses/${answers.license}).
+
+    ## Contributing
+
+    ${answers.contributing}
+
+    ## Tests
+
+    ${answers.tests}
+
+    ## Questions
+
+    For any clarifications or additional questions regarding this project, you can view my [GitHub profile](https://github.com/${answers.github}) or contact me by email at ${answers.email}.
+    `
 }
 
 promptUser()
