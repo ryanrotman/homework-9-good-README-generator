@@ -1,12 +1,13 @@
+// Importing needed modules for this project
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// Making the writeFile module able to be used in a promise
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// FIXME: will need to import the generateMarkdown module
-
+// Function to prompt the user and gather requested information for the README
 function promptUser() {
     return inquirer.prompt([
         {
@@ -68,13 +69,12 @@ function promptUser() {
     ]);
 };
 
-// FIXME: take a look at the develop folder and this section and adjust accordingly
-
+// Initialize the program
 promptUser()
     .then(function(answers) {
-        let readme = generateREADME(answers);
-
-        return writeFileAsync("README.md", readme);
+        let readme = generateMarkdown(data);
+        // Writing the README to a new folder in the project
+        return writeFileAsync("./README_Output/README.md", readme);
     })
     .then(function() {
         console.log("Successfully wrote to README.md");
