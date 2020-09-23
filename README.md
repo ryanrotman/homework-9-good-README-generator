@@ -3,7 +3,7 @@
 
     ## Description
     
-    This project is the homework assignment for week 9 of the coding boot camp through UT Austin. This project focuses on using node.js to create a README generator that will take user input and write that data to a new README file. This specific project uses the inquirer, fs, and util modules.
+    Test
 
     ## Table of Contents
     * [Installation](#installation)
@@ -15,11 +15,11 @@
 
     ## Installation
     
-    Run npm install and then proceed with running node index.js.
+    Run npm install
 
     ## Usage
 
-    This app is to be used by any and all for the purpose of creating a README for your project.
+    For any and all to generate a readme for their project.
 
     ## License
 
@@ -31,7 +31,7 @@
 
     ## Tests
 
-    This project is testing by running it in the integrated terminal of VS Code.
+    Very carefully!
 
     ## Questions
 
