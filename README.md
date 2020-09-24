@@ -14,6 +14,7 @@ To use this project you will need to clone this repository and then open it in y
 
 ## Usage
 Here is a video walkthrough of the project.
+[![ReadMe_ScreenShot_WalkthroughVideo](./Assets/Images/ReadMe_Screenshot_WalkthroughVideo.png)](https://drive.google.com/file/d/1-HkuFh6p1r3jt3Yjzm_Q_eEzlRDDGbC_/view)
 
 ## Page Screenshots
 The generated README from running this application. Find the actual README by clicking [here](https://github.com/ryanrotman/homework-9-good-README-generator/tree/master/README_Output) or on the screenshot below.
