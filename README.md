@@ -1,9 +1,9 @@
-# Homework 9: README Generator
+# README Generator
 
 ## Description
-This repository holds the homework assignment for Week 9 of the [The Coding Boot Camp](https://techbootcamps.utexas.edu/coding/) through the University of Texas at Austin's Center for Professional Education.
+<!-- This repository holds the homework assignment for Week 9 of the [The Coding Boot Camp](https://techbootcamps.utexas.edu/coding/) through the University of Texas at Austin's Center for Professional Education. -->
 
-The scope of this project is to create a command line application that dynamically creates a README from a user's input. This project is using Node.js for the runtime environment and the Inquirer package to prompt the user for input.
+This is a command line application that dynamically creates a README from a user's input. It uses Node.js for the runtime environment and the Inquirer package to prompt the user for input.
 
 ## Notes
 * One critical component to this project in commiting to GitHub is the use of the ```.gitignore``` folder. Because Node Modules are being used we do not want to commit the modules folder and other non-program specific files.
